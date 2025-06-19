@@ -1,6 +1,6 @@
 import React from 'react'
 import { blogs } from '../../../assets/data'
-import "./BlogItems.css"
+import "./blogItems.css"
 
 const BlogItems = () => {
   return (
