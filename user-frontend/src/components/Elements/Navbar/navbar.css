@@ -1,0 +1,170 @@
+.topMainContainer {
+    border-top: 1.5px solid #3d3d3d2e;
+    border-bottom: 1.5px solid #3d3d3d2e;
+    background-color: #F5F5F5;
+}
+
+.topItemContainer {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.topLeft {
+    font-size: 14px;
+    font-weight: 480;
+    color: #393E46;
+}
+
+.topRight a {
+    font-size: 14px;
+    margin: 0 10px;
+    font-weight: 450;
+    color: #393E46;
+}
+
+.mainNavContainer {
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 99;
+}
+
+.borderBottom {
+    border-bottom: 1.5px solid #3d3d3d2e;
+}
+
+.firstNav {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.searchBar {
+    position: relative;
+    width: 40%;
+}
+
+.searchBar input {
+    width: 100%;
+    background-color: #e5e5e5;
+    outline: none;
+    border: none;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 13px;
+}
+
+.searchIcon {
+    position: absolute;
+    top: 27%;
+    right: 14px;
+    cursor: pointer;
+}
+
+.login-signup {
+    width: 30%;
+    display: flex;
+    justify-content: right;
+}
+
+.login-signup a {
+    color: rgba(0, 0, 0, 0.638);
+    font-weight: 500;
+}
+
+.categoryItems {
+    width: 95%;
+    margin: auto;
+    align-items: center;
+}
+
+.catDiv {
+    width: 17%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.listItems {
+    width: 63%;
+}
+
+.listItems ul {
+    justify-content: center;
+    margin-top: 1rem !important;
+}
+
+.listItems ul li {
+    list-style: none;
+}
+
+.delText {
+    width: 20%;
+    text-align: end;
+}
+
+.catDiv span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+
+    .loginTextNav,
+    .delText,
+    .catDiv .catDivIconTwo,
+    .catDiv .catDivText,
+    .topLeft {
+        display: none;
+    }
+
+    .topRight {
+        width: 100%;
+        text-align: center;
+    }
+
+    .firstNav {
+        width: 90%;
+        margin: auto;
+    }
+
+    .catDiv {
+        width: 10%;
+    }
+
+    .listItems {
+        overflow: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: 90% !important;
+    }
+    .listItems ul {
+        justify-content: flex-start;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .searchBar {
+        display: none;
+    }
+
+    .firstNav {
+        justify-content: space-between;
+    }
+}

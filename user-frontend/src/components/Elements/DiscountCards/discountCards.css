@@ -1,0 +1,115 @@
+.freeShipping {
+    border: 2px solid red;
+    padding: 10px 20px;
+    margin: 20px auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60% !important;
+}
+
+.freeShippingHeadOutside {
+    display: none;
+}
+
+.freeShipping img {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.freeShippingAmount,
+.freeShippingHeadOutside,
+.freeShippingHeadInside {
+    font-weight: 800;
+    /* margin: 0 5px; */
+}
+.freeDel{
+    margin: 50px auto;
+}
+
+@media screen and (max-width: 1163px) {
+    .freeShippingHeadInside {
+        display: none;
+    }
+
+    .freeShippingHeadOutside {
+        display: block;
+    }
+
+    .freeShipping {
+        justify-content: center;
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .freeShipping {
+        width: 90% !important;
+        text-align: center;
+    }
+    .freeDel{
+        margin: 30px auto;
+    }
+}
+
+
+
+/* discount cards */
+.discContainer {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.discSubContainer img {
+    width: 100%;
+    max-height: 50vh !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.discSubContainer {
+    margin: 20px auto;
+    cursor: move;
+}
+
+.discSubContainer div {
+    outline: none;
+}
+
+.discContainer .slick-prev,
+.discContainer .slick-next {
+    top: 40% !important;
+    display: block !important;
+    z-index: 10;
+}
+
+.discContainer .slick-prev::before,
+.discContainer .slick-next::before {
+    font-size: 40px !important;
+    color: #ffffff !important;
+}
+
+.discContainer .slick-next {
+    right: 55px !important;
+}
+
+.discContainer .slick-prev {
+    left: 35px !important;
+}
+.cardsDisc{
+    /* border: 2px solid black; */
+    max-height: 50vh !important;
+    border-radius: 10px;
+    margin: 0 10px;
+    height: 100%;
+    display: flex;
+    /* padding: 10px; */
+}
+.cardsDisc img{
+    /* width: 30%; */
+    max-width: 768px !important;
+    max-height: 447px !important;
+    object-fit: cover;
+}

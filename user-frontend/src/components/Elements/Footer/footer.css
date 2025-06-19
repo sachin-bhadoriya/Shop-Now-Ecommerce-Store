@@ -1,0 +1,228 @@
+.footer {
+    background-color: #2D4F2B;
+    color: #EFEEEA;
+    /* padding: 40px 20px; */
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+    /* align-items: flex-start; */
+    /* gap: 30px; */
+    /* margin-bottom: 30px; */
+  }
+  
+  /* Brand Section */
+  .footer-brand {
+    /* flex: 1 1 300px; */
+    max-width: 20%;
+  }
+  
+  /* Subscribe Section */
+  .footer-subscribe {
+    /* flex: 1 1 300px; */
+    /* max-width: 400px; */
+    /* width: 100%; */
+  }
+  
+  .footer-subscribe h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #FAF6E9;
+  }
+  
+  .subscribe-form {
+    width: 30%;
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 10px;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    background-color: #F7F7F7;
+    color: #2D4F2B;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #999;
+  }
+  
+  .subscribe-form input:focus {
+    border: 2px solid #B6F500;
+    background-color: #FAF6E9;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    background-color: #B6F500;
+    color: #2D4F2B;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #347433;
+    color: #FAF6E9;
+  }
+  
+  /* Footer Links */
+  .footer-links {
+    display: flex;
+    width: 50%;
+    /* flex-wrap: wrap; */
+    /* gap: 40px; */
+    /* flex: 1 1 100%; */
+    justify-content: space-evenly;
+  }
+  
+  .footer-links > div {
+    /* min-width: 150px; */
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #B6F500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    /* padding: 0; */
+    /* margin: 0; */
+  }
+  
+  .footer-links li {
+    position: relative;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #EFEEEA;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links li:hover {
+    color: #B6F500;
+  }
+  
+  .footer-links li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #B6F500;
+    font-size: 14px;
+  }
+  
+  /* Bottom Section */
+  .footer-bottom {
+    border-top: 1px solid #347433;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #FAF6E9;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-social i {
+    font-size: 18px;
+    cursor: pointer;
+    color: #B6F500;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-social i:hover {
+    color: #FAF6E9;
+  }
+  
+  /* 🌐 Responsive Media Queries */
+  @media (max-width: 1024px) {
+    .footer-top {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 30px;
+    }
+  
+    .footer-links {
+      flex: 1 1 100%;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-top {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .footer-brand,
+    .footer-subscribe,
+    .footer-links {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .subscribe-form {
+      flex-direction: column;
+    }
+  
+    .subscribe-form input,
+    .subscribe-form button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .footer-brand h2 {
+      font-size: 24px;
+    }
+  
+    .footer-subscribe h3 {
+      font-size: 18px;
+    }
+  
+    .subscribe-form button {
+      font-size: 14px;
+    }
+  
+    .footer-links h4 {
+      font-size: 16px;
+    }
+  
+    .footer-social i {
+      font-size: 16px;
+    }
+  }
+  

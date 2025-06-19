@@ -1,0 +1,57 @@
+.subContainerFeature {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    align-items: center;
+    margin: 30px auto 70px auto;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+  }
+  .subContainerFeature::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .freeShip {
+    cursor: pointer;
+    min-width: 180px;
+    flex: 0 0 auto;
+    padding: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .iconsFeature {
+    margin: 10px 0;
+    transition: all 0.5s;
+  }
+  
+  .freeShip:hover .iconsFeature {
+    color: #347433;
+    transform: translateY(-3px);
+  }
+  
+  .featitle {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  
+  .feadisc {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .subContainerFeature {
+      gap: 20px;
+      justify-content: flex-start;
+    }
+  
+    .freeShip {
+      min-width: 160px;
+    }
+  }
+  

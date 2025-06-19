@@ -1,0 +1,89 @@
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    /* max-width: 800px; */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: auto; 
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 5;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .carousel-buttons button {
+    background-color: #347433;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s;
+  }
+  .carousel-buttons button:hover {
+    background-color:#B6F500;
+    color: black;
+  }
+  
+  .embla {
+    overflow: hidden;
+    height: auto; 
+  }
+  
+  .embla__container {
+    display: flex;
+  }
+  
+  .embla__slide {
+    position: relative;
+    min-width: 100%;
+  }
+  
+  
+  .slide-img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+  }
+  
+  .embla__dots {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 5;
+  }
+  
+  .embla__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #B6F500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .embla__dot:hover {
+    background: #2D4F2B;
+  }
+  
+  .embla__dot.is-selected {
+    background: #347433;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .carousel-buttons {
+      display: none;
+    }
+    
+  }
