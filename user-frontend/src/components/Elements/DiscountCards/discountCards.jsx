@@ -1,5 +1,5 @@
 import React from 'react'
-import "./DiscountCards.css"
+import "./discountCards.css"
 import { discountCard } from '../../../assets/data'
 import Slider from "react-slick";
 
