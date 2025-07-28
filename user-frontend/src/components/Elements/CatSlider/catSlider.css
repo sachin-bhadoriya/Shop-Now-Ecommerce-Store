@@ -1,0 +1,23 @@
+.catSliderContainer {
+    width: 98%;
+    margin: 0 auto;
+  }
+  
+  .carouselContainer {
+    height: 100%;
+  }
+  
+  .card-img-wrapper {
+    height: 25vh;
+    /* padding: 0.5rem 0; spacing between images */
+  }
+  
+  .card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  
+ 

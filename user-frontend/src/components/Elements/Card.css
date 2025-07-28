@@ -1,0 +1,123 @@
+.cardContainer {
+    width: 240px;
+    /* width: 210px; */
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+    /* border: 1px solid grey; */
+    border-radius: 10px 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.imageContainer {
+    height: 200px;
+    overflow: hidden;
+}
+
+.cardContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.cardContainer img:hover {
+    transform: scale(1.2);
+    transition: all 1s transform;
+}
+
+.productDetailContainer {
+    padding: 12px 0 5px 0;
+    margin: auto 0;
+}
+
+.productPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.cancelPriceProduct {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.activePriceProduct {
+    font-weight: 500;
+}
+
+.addToCartBtn {
+    padding: 0 10px;
+    margin: 15px 0 10px 0;
+}
+
+.addToCartBtn button {
+    width: 100%;
+    border: 0.2px solid #159e0e;
+    padding: 7px 0;
+    background-color: transparent;
+    color: #159e0e;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.addToCartBtn button:hover {
+    border: 0.2px solid #000;
+    background-color: black;
+    color: #fff;
+}
+
+.addToCartBtn button:hover span {
+    color: #fff;
+}
+
+.addToCartBtn button span {
+    font-size: 11px;
+    padding: 7px 0;
+    color: #159e0e;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-weight: 700;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.companyName {
+    font-size: 13px;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 13px;
+}
+
+.productTitle {
+    font-size: 14px;
+    padding-left: 13px;
+    font-weight: 600;
+    margin: 2px 0;
+}
+
+.productRating {
+    padding-left: 13px;
+    color: orange;
+    font-size: 20px;
+    margin-top: -1px;
+}
+
+@media screen and (max-width: 1000px) {
+    .cardContainer {
+        /* width: 321.667px; */
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cardContainer {
+        /* width: 321.667px; */
+        width: 210px;
+    }
+}
